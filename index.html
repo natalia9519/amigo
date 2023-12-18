@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felicitación de Amigo Invisible</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="felicitacion">
+    <h1>¡Felices Fiestas, Andrea!</h1>
+    <img id="myImg" src="andrea.png" alt="Foto de Andrea">
+  </div>
+  <div class="purpurina"></div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>🎄¡Feliz Navidad, Andrea!🎄 <br> <strong>¡Soy yo!</strong> Tu amigo secreto de estas fiestas. Estamos pasando un periodo con mucho codigo y dolores de cabeza. Por eso pase por la farmacia para ti 😉 Espero que el codigo se vuelva tu amigo pronto, pero mientras tanto todo con dulce funciona mejor. Ten unas magnificas fiestas de navidad de todas las personas que mas te quieren. A la vuelta en el nuevo año espero llegues con toda la energía cargada y con un montón de regalos de los reyes magos.🫅🏾🫅🏼🫅🏻 <br> Tu amigo secreto te desea feliz navidad y entrada de año.🎅</p>
+    </div>
+  </div>
+  <audio autoplay loop>
+    <source src="./audio.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="snow"></div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    img.onclick = function(){
+      modal.style.display = "block";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
